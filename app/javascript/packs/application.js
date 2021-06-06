@@ -8,6 +8,26 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+require('packs/vendor/jquery-1.12.4.min')
+require('packs/vendor/bootstrap.min')
+require('packs/vendor/bootstrap-select.min')
+require('packs/vendor/jquery.bootstrap-touchspin.min')
+require('packs/vendor/magnific-popup.min')
+require('packs/vendor/counterup.min')
+require('packs/vendor/waypoints.min')
+require('packs/vendor/waypoints-sticky.min')
+require('packs/vendor/isotope.pkgd.min')
+require('packs/vendor/owl.carousel.min')
+require('packs/vendor/jquery.owl-filter')
+require('packs/vendor/stellar.min')
+require('packs/vendor/scrolla.min')
+require('packs/custom')
+require('packs/vendor/shortcode')
+require('packs/vendor/switcher')
+require('packs/vendor/jquery.bgscroll')
+
+
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

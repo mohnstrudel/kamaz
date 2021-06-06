@@ -1,0 +1,38 @@
+footer.site-footer.footer-dark
+  .footer-top.overlay-wraper
+    .overlay-main
+    .container
+      .row
+        .col-md-12.col-sm-12
+          .widget.widget_about.text-white
+            h4.widget-title
+              | О компании
+            .logo-footer.clearfix.p-b15
+              =link_to root_path do
+                =image_tag 'footer-logo.png', width: 171, height: 39
+            p
+              | Компания ООО «ПРОФИТ-СК» предлагает воспользоваться арендой крана-
+                манипулятора на базе КАМАЗ 65115 (модель 780520) 10 тонн в Москве и Московской
+                области на привлекательных условиях!
+            ul
+              li
+                i.fa.fa-phone.text-primary
+                b.p-lr5.text-uppercase
+                  | Тел.:
+                  =< link_to KAMAZ_PHONE, "tel:#{KAMAZ_PHONE}"
+              li
+                i.fa.fa-envelope.text-primary
+                b.p-lr5.text-uppercase
+                  | Email:
+                  =< mail_to KAMAZ_EMAIL, KAMAZ_EMAIL
+              li
+                i.fa.fa-location-arrow.text-primary
+                b.p-lr5.text-uppercase
+                  | Местоположение:
+                  =< KAMAZ_LOCATION
+  .footer-bottom.overlay-wraper.bg-white
+    .overlay-main
+    .container.p-t30
+      .mt-footer-bot-center
+        span.copyrights-text
+          | © 2021 ООО «ПРОФИТ –СК». Все права защищены. Разработка и поддержка сайта - dev@handsomecake.com

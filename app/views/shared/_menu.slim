@@ -1,0 +1,68 @@
+header.site-header.header-style-6
+  .top-bar.top-bar-liner.bg-gray
+    .container
+      .row
+        .mt-topbar-right.clearfix
+          ul.list-unstyled.pull-right.tb-info-liner
+            li
+              i.text-primary
+              | Аренда автокрана манипулятора в Москве и Московской области.
+          ul.list-inline.pull-right.tb-social-liner
+            li
+              a.fa.fa-facebook[href="javascript:void(0);"]
+            li
+              a.fa.fa-twitter[href="javascript:void(0);"]
+            li
+              a.fa.fa-linkedin[href="javascript:void(0);"]
+            li
+              a.fa.fa-instagram[href="javascript:void(0);"]
+  .main-bar.header-middle.bg-white
+    .container
+      .logo-header
+        =link_to root_path do
+          =image_tag 'logo-1.png', width: 216, height: 37
+      .header-info
+        ul
+          li
+            div
+              .icon-sm
+                span.icon-cell.text-primary
+                  i.iconmoon-smartphone
+              .icon-content
+                strong
+                  | Телефон
+                span
+                  =link_to KAMAZ_PHONE, "tel:#{KAMAZ_PHONE}"
+          li
+            div
+              .icon-sm
+                span.icon-cell.text-primary
+                  i.iconmoon-envelope
+              .icon-content
+                strong
+                  | Эл. почта
+                span
+                  =mail_to KAMAZ_EMAIL, KAMAZ_EMAIL
+  .sticky-header.main-bar-wraper
+    .main-bar.header-botton.nav-bg-primary
+      .container
+        button.navbar-toggle.collapsed[data-target=".header-nav" data-toggle="collapse" type="button"]
+          span.sr-only
+            | Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+
+        .header-nav.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              =link_to 'Главная', root_path
+            li
+              a[href="#usage"]
+                | О спецтехнике
+            li
+              a[href="#about_us"]
+                | О нас
+            li
+              a[href="#contact"]
+                | Связаться с нами
