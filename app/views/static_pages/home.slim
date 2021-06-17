@@ -21,12 +21,16 @@
               .icon-content
                 h4.mt-tilte.m-b15
                   a[href="#"]
-                    | Спец. оборудование
+                    | Выполнение работ по строительству:
                 ul.list-check-circle.primary.m-b20
                   li
-                    | Транспортировка любых тяжелых станков и различного массивного оборудования
+                    | Демонтаж металлических конструкций
                   li
-                    | Перевозка пачек стекла
+                    | Укладка трубопроводов, канализационных стоков
+                  li
+                    | Транспортировка стройматериалов
+                  li
+                    | Перевозка пиломатериала
           .mt-box.m-b30
             .mt-icon-box-wraper.p-a30.left.bg-white.hover-border-outer.hover-border
               .icon-md.radius.m-b15
@@ -35,14 +39,12 @@
               .icon-content
                 h4.mt-tilte.m-b15
                   a[href="#"]
-                    | Нестандартые грузы
+                    | Монтаж технического и другого оборудования:
                 ul.list-check-circle.primary.m-b20
                   li
-                    | Грузоперевозка с использованием манипулятора
+                    | Выполнение монтажных работ с металлоконструкциями
                   li
-                    | Перемещение длинномерного строительного материала
-                  li
-                    | Транспортировка многих видов спецтехники
+                    | Работы по монтажу ограждающих конструкций
         .col-md-4.col-sm-6.col-xs-6.col-xs-100pc
           .mt-box.m-b30
             .mt-media.mid-img-verticle
@@ -57,12 +59,16 @@
               .icon-content
                 h4.mt-tilte.m-b15
                   a[href="#"]
-                    | Стройматериалы
+                    | Работа с грузами:
                 ul.list-check-circle.primary.m-b20
                   li
-                    | Транспортировка панелей и металлоконструкций, и последующем их монтаже
+                    | Погрузка, разгрузка контейнеров, малогабаритных стройматериалов
                   li
-                    | Перевозка различных контейнеров
+                    | Транспортировка малых архитектурных форм
+                  li
+                    | Транспортировка панелей и металлоконструкций
+                  li
+                    | Транспортировка любых тяжелых станков и различного массивного оборудования
           .mt-box.m-b30
             .mt-icon-box-wraper.p-a30.left.bg-white.hover-border-outer.hover-border
               .icon-md.radius.m-b15
@@ -71,43 +77,17 @@
               .icon-content
                 h4.mt-tilte.m-b15
                   a[href="#"]
-                    | Прочие области
+                    | Прочие услуги:
                 ul.list-check-circle.primary.m-b20
                   li
-                    | Эвакуация поврежденных автомобилей после аварий
+                    | Подача инструментов и оборудования в оконные проемы многоэтажных домов, котлованы
                   li
-                    | Работы, заменяя автовышку
-                  li
-                    | Перевозка больших деревьев при расчистке и высадке леса
+                    | Подача листового металла на крыши малоэтажных домов
 
 = render partial: 'static_pages/shipment_solutions'
 
-#contact.section-full.bg-white.bg-right-center.bg-no-repeat[style="background-image:url(images/background/bg-trans-2.png);"]
-  .container
-    .row.conntact-home
-      .col-lg-5.col-md-5.col-sm-12
-        .contact-home1-left.bg-secondry
-          .contact-tag-line.bg-white.text-primary
-            | Обратная связь
-          .section-content.p-lr30.p-tb30
-            .call-back-form[style="z-index:1; position:relative"]
-              h2.text-white.m-t0
-                | Свяжитесь с нами
-              form.cons-contact-form2.form-transparent[method="post" action="form-handler2.php"]
-                .form-group
-                  input.form-control[name="username" type="text" required placeholder="Имя"]
-                .form-group
-                  input.form-control[name="email" type="text" required placeholder="Эл. почта"]
-                .form-group
-                  input.form-control[name="phone" type="text" required placeholder="Телефон"]
-                .form-group
-                  textarea.form-control[name="message" rows="3" placeholder="Сообщение"]
-                button.site-button[type="submit"]
-                  span.font-weight-700.inline-block.p-lr15
-                    | Отправить
-      .section-content.contact-home1-right
-        .mt-box
-          .mt-media
-            =image_tag 'con-1.png'
+/ = render partial: 'static_pages/numbers_boxes'
+
+= render partial: 'static_pages/contact_form'
 
 / = render partial: 'static_pages/clients'

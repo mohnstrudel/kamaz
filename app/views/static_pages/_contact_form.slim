@@ -1,0 +1,27 @@
+#contact.section-full.bg-white.bg-right-center.bg-no-repeat.bg-trans-2
+  .container
+    .row.conntact-home
+      .col-lg-5.col-md-5.col-sm-12
+        .contact-home1-left.bg-secondry
+          .contact-tag-line.bg-white.text-primary
+            | Обратная связь
+          .section-content.p-lr30.p-tb30
+            .call-back-form[style="z-index:1; position:relative"]
+              h2.text-white.m-t0
+                | Заказать
+              = form_with model: ClientRequest.new, html: { class: 'cons-contact-form2 form-transparent' }, local: false do |form|
+                .form-group
+                  = form.text_field :name, class: 'form-control', placeholder: "Имя", required: true
+                .form-group
+                  = form.text_field :email, class: 'form-control', placeholder: "Эл. почта", required: true
+                .form-group
+                  = form.text_field :phone, class: 'form-control', placeholder: "Телефон", required: true
+                .form-group
+                  = form.text_area :message, rows: 3, class: 'form-control', placeholder: "Сообщение"
+                = form.submit 'Отправить', class: 'site-button' do
+                  span.font-weight-700.inline-block.p-lr15
+              #form_response
+      .section-content.contact-home1-right
+        .mt-box
+          .mt-media
+            =image_tag 'con-1.png'

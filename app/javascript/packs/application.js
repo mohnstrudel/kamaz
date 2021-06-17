@@ -27,6 +27,8 @@ require('packs/vendor/switcher')
 require('packs/vendor/jquery.bgscroll')
 
 
+window.jQuery = jQuery
+window.$ = $
 
 Rails.start()
 Turbolinks.start()
