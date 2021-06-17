@@ -4,6 +4,8 @@ class ClientRequestsController < ApplicationController
     @client_request = ClientRequest.new(client_request_params)
 
     if @client_request.save
+      @client_request.send_mails
+
       respond_to do |format|
         format.js { render 'create', layout: false }
       end

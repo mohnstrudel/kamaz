@@ -73,4 +73,25 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  #
+  # Mailer config for devise
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.delivery_method = :smtp
+
+  # Specify what domain to use for mailer URLs
+
+  config.action_mailer.smtp_settings = {
+   user_name: Figaro.env.mailer_user,
+   password: Figaro.env.mailer_password,
+   domain: Figaro.env.hostname,
+   address: Figaro.env.mailer_address,
+   port: Figaro.env.mailer_port,
+   authentication: :plain,
+   enable_starttls_auto: true
+   # tls: true
+  }
 end
