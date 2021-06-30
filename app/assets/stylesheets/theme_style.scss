@@ -9566,6 +9566,9 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 /*____LOGO____*/
 
+.logo-font {
+  font-family: 'Lobster', sans-serif;
+}
 
 /*____LOGO FOR HEADER____*/
 
@@ -9588,7 +9591,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 @media only screen and (max-width:991px) {
 	.logo-header {
-		width: 180px;
+		width: 220px;
 	}
 	.header-skew::before,
 	.header-skew::after {
@@ -9599,7 +9602,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 @media only screen and (max-width:768px) {
 	.logo-header {
-		width: 180px;
+		width: 220px;
 		padding-left: 7px;
 	}
 }
@@ -9613,7 +9616,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 @media only screen and (max-width:400px) {
 	.logo-header {
-		width: 160px;
+		width: 220px;
 	}
 
 }
